@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		15203557234B18860098DC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15203556234B18860098DC6D /* AppDelegate.swift */; };
 		15203559234B18860098DC6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15203558234B18860098DC6D /* SceneDelegate.swift */; };
-		1520355B234B18860098DC6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1520355A234B18860098DC6D /* ViewController.swift */; };
 		1520355E234B18860098DC6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1520355C234B18860098DC6D /* Main.storyboard */; };
 		15203560234B18880098DC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1520355F234B18880098DC6D /* Assets.xcassets */; };
 		15203563234B18880098DC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15203561234B18880098DC6D /* LaunchScreen.storyboard */; };
 		1520356E234B18880098DC6D /* VideoConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1520356D234B18880098DC6D /* VideoConverterTests.swift */; };
 		15203579234B18880098DC6D /* VideoConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15203578234B18880098DC6D /* VideoConverterUITests.swift */; };
+		15D0FB8B234B21DD0087E7F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0FB8A234B21DD0087E7F3 /* HomeViewController.swift */; };
+		15D0FB8D234B21F40087E7F3 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0FB8C234B21F40087E7F3 /* ConverterViewController.swift */; };
+		15D0FB8F234B22070087E7F3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0FB8E234B22070087E7F3 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		15203553234B18860098DC6D /* VideoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15203556234B18860098DC6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15203558234B18860098DC6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1520355A234B18860098DC6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1520355D234B18860098DC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1520355F234B18880098DC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15203562234B18880098DC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		15203574234B18880098DC6D /* VideoConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15203578234B18880098DC6D /* VideoConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoConverterUITests.swift; sourceTree = "<group>"; };
 		1520357A234B18880098DC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D0FB8A234B21DD0087E7F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15D0FB8C234B21F40087E7F3 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		15D0FB8E234B22070087E7F3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,10 @@
 		15203555234B18860098DC6D /* VideoConverter */ = {
 			isa = PBXGroup;
 			children = (
-				15203556234B18860098DC6D /* AppDelegate.swift */,
-				15203558234B18860098DC6D /* SceneDelegate.swift */,
-				1520355A234B18860098DC6D /* ViewController.swift */,
-				1520355C234B18860098DC6D /* Main.storyboard */,
-				1520355F234B18880098DC6D /* Assets.xcassets */,
-				15203561234B18880098DC6D /* LaunchScreen.storyboard */,
+				15D0FB91234B221A0087E7F3 /* Flow Controllers */,
+				15D0FB89234B219F0087E7F3 /* View Controllers */,
+				15D0FB92234B223F0087E7F3 /* Resources */,
+				15D0FB90234B22120087E7F3 /* Views */,
 				15203564234B18880098DC6D /* Info.plist */,
 			);
 			path = VideoConverter;
@@ -126,6 +128,42 @@
 				1520357A234B18880098DC6D /* Info.plist */,
 			);
 			path = VideoConverterUITests;
+			sourceTree = "<group>";
+		};
+		15D0FB89234B219F0087E7F3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15D0FB8A234B21DD0087E7F3 /* HomeViewController.swift */,
+				15D0FB8C234B21F40087E7F3 /* ConverterViewController.swift */,
+				15D0FB8E234B22070087E7F3 /* SettingsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		15D0FB90234B22120087E7F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1520355C234B18860098DC6D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15D0FB91234B221A0087E7F3 /* Flow Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Flow Controllers";
+			sourceTree = "<group>";
+		};
+		15D0FB92234B223F0087E7F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15203556234B18860098DC6D /* AppDelegate.swift */,
+				15203558234B18860098DC6D /* SceneDelegate.swift */,
+				1520355F234B18880098DC6D /* Assets.xcassets */,
+				15203561234B18880098DC6D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1520355B234B18860098DC6D /* ViewController.swift in Sources */,
 				15203557234B18860098DC6D /* AppDelegate.swift in Sources */,
+				15D0FB8F234B22070087E7F3 /* SettingsTableViewController.swift in Sources */,
 				15203559234B18860098DC6D /* SceneDelegate.swift in Sources */,
+				15D0FB8B234B21DD0087E7F3 /* HomeViewController.swift in Sources */,
+				15D0FB8D234B21F40087E7F3 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
